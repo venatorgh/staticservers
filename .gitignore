@@ -1,0 +1,5 @@
+bookserver/DocumentRoot/books
+mp3server/DocumentRoot/music/artists
+.DS_Store
+.env
+.vscode

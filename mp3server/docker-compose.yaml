@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    music-server:
+        image: php:7.3-apache
+        ports:
+            - 9010:80
+        restart: unless-stopped
+        volumes:
+            - ./DocumentRoot/music:/var/www/html
+
+networks:
+    default:
+        external:
+            name: backendmanualnetwork1
